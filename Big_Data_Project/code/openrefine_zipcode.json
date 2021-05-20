@@ -1,0 +1,43 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Zipcode",
+    "expression": "value.replace(/\\b100\\b/,\"10023\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Zipcode using expression value.replace(/\\b100\\b/,\"10023\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Zipcode",
+    "expression": "value.replace(/\\b111354\\b/,\"11354\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Zipcode using expression value.replace(/\\b111354\\b/,\"11354\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "State",
+    "description": "Remove column State"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Latitude_y",
+    "description": "Remove column Latitude_y"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Longitude_y",
+    "description": "Remove column Longitude_y"
+  }
+]
